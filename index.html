@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sten Sax Påse</title>
+    <link rel="icon" href="./images/rock.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./javascript/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+    <!-- ! First Page -->
+    <div id="firstPage">
+      <div class="namePage">
+        <h1>NAME YOUR CHAMPION!</h1>
+        <form class="formName">
+          <input type="text" name="name" id="name" maxlength="20" required />
+          <button>FIGHT</button>
+        </form>
+      </div>
+    </div>
+    <!--! Main Page -->
+    <main>
+      <!-- ! Scoreboard -->
+      <h1>Scoreboard</h1>
+
+      <div id="scoreBoard">
+        <div class="score">
+          <h2 id="playerName"></h2>
+          <h2 id="playerScore"></h2>
+        </div>
+        <div class="score">
+          <h2 id="winLose">VERSUS</h2>
+        </div>
+
+        <div class="score">
+          <h2>GAGA</h2>
+          <h2 id="pcScore"></h2>
+        </div>
+      </div>
+      <!-- ! Game Page -->
+      <div id="gameDiv">
+        <h2>Pick One</h2>
+        <div id="formGame">
+          <img id="rock" src="./images/rock.svg" />
+          <img id="paper" src="./images/paper.svg" />
+          <img id="scissors" src="./images/scissors.svg" />
+        </div>
+
+        <div id="roundDiv">
+          <h2 id="playerPick"></h2>
+          <h2 id="pcPick"></h2>
+        </div>
+      </div>
+
+      <!-- ! Tutorial Page -->
+      <button id="tutorialBtn"><h2>Tutorial</h2></button>
+      <figure id="tutorialPage">
+        <button id="tutorialHide"><h2>Hide Tutorial</h2></button>
+        <img id="tutorialImg" src="./images/tutorial.PNG" alt="tutorial pic" />
+        <h2>First to score 3 points win</h2>
+      </figure>
+    </main>
+    <!-- ! Winner/ Loser Page -->
+    <div id="wlPage">
+      <h1></h1>
+      <h2></h2>
+      <button id="reset"><h1>Play Again</h1></button>
+    </div>
+    <footer>&copy;Melker Dahl 2023</footer>
+  </body>
+</html>
